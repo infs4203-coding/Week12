@@ -1,0 +1,107 @@
+INFS4203/7203 Project
+Semester 2, 2023
+16:00 on 15th September 2023 for project proposal (Phase 1, 15%)
+16:00 on 27th October 2023 for project report (Phase 2, 20%) 
+
+Important Assignment Submission Guidelines:
+1. All assignments must be submitted exclusively through the UQ Blackboard. No other forms of submission will be accepted.
+2. Failure to submit an assignment appropriately before the due date will result in a penalty, as outlined in the ECP.
+3. It is your responsibility to ensure that your assignment is successfully submitted before the designated deadline.
+4. Please note that email submissions will not be accepted under any circumstances. 
+
+
+Overview 
+The assignment aims to assess your ability to apply data mining techniques to solve real-world problems. This is an individual task, and completion should be based on your own design.  
+For this assignment, you will individually complete a project proposal and implement it to develop data mining models applicable to test data. You can choose either:
+1. A data-oriented project, or  
+2. A competition-oriented project.  
+To complete the project, you need to  submit a comprehensive proposal in Phase 1, clearly describing the data pre-processing, tuning, model training, and evaluation techniques you plan to apply. Based on this proposal, in Phase 2, you will submit a project implementation and a report on the final test results. 
+
+
+Track 1: Data-oriented project 
+In this data-oriented project, our dataset named train.csv is designed to closely simulate real-world scenarios, reflecting the inherent complexities found in natural data. It originates from the CIFAR-10 (https://www.cs.toronto.edu/~kriz/cifar.html) dataset, but we have deliberately introduced various realistic challenges, such as missing values, a diverse range of data scales, and outliers. To create this dataset, we employed a neural network to extract features from the original CIFAR-10 data and made certain modifications to the resultant features. As a result, the dataset exhibits a compelling resemblance to naturally occurring data, offering an excellent opportunity to study and develop robust solutions applicable to real-world data analysis. 
+In the "train.csv" file, each row, except for the first one, represents a single data point, and there are a total of 2180 data points in this dataset. The first 100 columns (Num_Col_0 to Num_Col_99) contain numerical features, while the subsequent 28 columns (Cat_Col_100 to Cat_Col_127) contain nominal features. The last column "Label" indicates the corresponding label for each data point. The dataset includes a total of 10 classes, which are denoted by numbers 0 to 9, representing the following categories: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck, respectively. 
+The main objective based on the provided labeled data is to develop a classifier capable of accurately classifying a data point into one of the ten classes for unseen data. The classifier's performance will be evaluated by the teaching team using the test data released in Week 9, where the ground truth labels are only accessible to the teaching team. 
+
+Phase 1: project proposal (15 marks) 
+In the first phase of the project, you are required to submit a proposal by 16:00 on 15th September 2023. The proposal should outline your overall plan for the project, including details about the learning process and the timeline for Phase 2. It's important to note that you do not need to submit any actual codes or report any training, validation, or test results in the Phase 1 proposal. Additionally, an abstract is not required in the proposal. The focus should be on providing a clear and comprehensive outline of your approach and timeline for the project in Phase 2. 
+The proposal takes 15 marks in total. 12 marks could be earned by describing clearly and comprehensively the following four aspects. These aspects provide guides on what you have to discuss (as a whole) in the proposal instead of serving as independent questions for you to address. Note that you should ONLY use techniques delivered in INFS4203/7203. Techniques beyond those delivered in INFS4203/7203 are NOT allowed.  
+1. (3 marks) Based on your analysis of the dataset, discuss whether the following pre-processing techniques should be considered: outlier detection, normalization, imputation, etc. Describe how to determine appropriate techniques by cross-validation, and how to apply them to the current data. 
+2. (5 marks) Based on the above pre-processed data, describe the procedure of applying the four classification techniques learned in lectures (decision tree, random forest, k-nearest neighbor and naïve bayes) to the data, including necessary model selection and hyperparameter tuning by crossvalidation. You also need to consider an ensemble of the classification results from different classifiers at the end of learning. Discussing and giving the reasonable ranges to perform hyperparameters search are expected. 
+3. (3 marks) Describe the process of evaluating the model given the current dataset using crossvalidation. Based on your analysis of the data distribution, answer explicitly which metric is the most appropriate for measuring the classification performance of the current dataset.  
+4. (1 mark) Give your timeline for the implementation of your project in the Phase 2. The timeline should include a justified, comprehensive and feasible list of milestones.  The timeline is a succinct plan showing that the implementation and testing can be submitted on time before the Phase 2 due on 27 Oct.  
+The final 3 marks will be given to the presentation of the proposal. We expect the proposal to have good structure, that helps comprehension. The presentation should be neat and professional, with bibliography, which is correctly formatted following the examples in the provided template and appropriately referenced. Marks will be deduced if there are formatting, spelling, grammar, bibliography, referencing or punctuation errors which impact the understanding of the proposal. 
+Hints:   
+1. You do not need to explain the mechanical of how each technique works or how to calculate each metrics unless needed. In the proposal, please focus more on practical aspects such as the criteria to determine which technique(s) to apply. 
+2. The pre-processing technique should be decided on whether they contribute to the classification. More specifically, the pre-processing and classification techniques are conjugated: one follows closely after the other. To achieve a good performance, you should use the cross-validation technique to select the best combination of pre-processing techniques and classification methods. Some of the combinations of algorithms and pre-processing techniques may achieve better performance than other combinations. 
+3. Consider using both mean and standard deviation to decide whether a result is better than another when using cross-validation. 
+4. Please bear in mind that ensemble of ensemble (such as combining the output of random forest and k-NN by majority voting) may also achieve a good result.   
+5. Note that in the testing phase, you usually apply the same pre-processing technique in the training phase. 
+
+Using of Generative AI 
+Artificial Intelligence (AI), such as ChatGPT, provides emerging tools that may support students in completing this assessment task. Students may appropriately use AI in a revision of existing authentic assessments only. This may involve correcting grammar errors, improving sentence structures, enhancing clarity of expression, or making other relevant revisions. Students must clearly reference any use of AI in each instance to complete the assessment task. A failure to reference AI use or any other way of using AI beyond the revision of existing authentic assessment may constitute student misconduct under the Student Code of Conduct. 
+Specifically, if you use generative AI tools to help revise your proposal, you should 
+1. Acknowledgment Section: Include a dedicated section in your work where you acknowledge the use of AI tools and mention which parts of the content have been revised by AI.  
+2. Documentation (not under the four page limit): Keep track of the AI interactions and any generated outputs during the revision process. This documentation can serve as evidence for the use of AI if needed. 
+Students may be required to demonstrate detailed comprehension of their written submission independent of AI tools through an in-person interview. 
+
+Format 
+The proposal should follow the style of Proposal_Template.doc. The submission should be within four pages, including all references and illustrations (if needed). References should be properly provided once necessary, even if you use contents from lecture slides. Non-peer reviewed web sources could be used and should also be properly cited.  
+
+Submission 
+The proposal should be submitted  
+1. in PDF or Doc (Docx) format, other formats are not acceptable, and
+2. through the “Proposal submission” Turnitin link provided at Blackboard -> Assessment -> Project -> Proposal submission before the deadline.  
+You are allowed to submit the proposal multiple times before the due date. Only the last submitted version will be marked. A 100% penalty will be applied to the late submission (see ECP Section 5 for details). 
+Do not submit codes in Phase 1, even if you have analyzed data by programming.  
+
+Phase 2: Project report (20 marks) 
+In this phase, you will implement the ideas in your proposal and use them to classify the test data which will be provided in Week 9. Only techniques delivered in lectures are allowed to be used. Details on format, marking standard and submission will be released in Week 9.  
+We do not limit the type of programming languages in Phase 2. You could pick any language you want. 
+
+
+Track 2: Competition-oriented project 
+In this project, you will need to complete a data mining-related online competition and achieve satisfactory test performance. The competition should end no later than Oct. 1st, 2023 and be related to the learning objective of this course. After you have successfully targeted a competition with a minimum of ten competitors, please Express of  Interest (EOI) by this link (or https://forms.gle/BMJcCAXNkivSfg4B7 ).  There are limited spots for this project of up to 10 students, determined by the time you submit EOI and whether the project fits the learning objective of this course.  
+The following entry-level Kaggle competitions are NOT eligible for the project  
+1. Titanic - Machine Learning from Disaster: https://www.kaggle.com/c/titanic 
+2. House Prices - Advanced Regression Techniques: https://www.kaggle.com/c/house-prices-advancedregression-techniques 
+3. Digit Recognizer: https://www.kaggle.com/c/digit-recognizer 
+4. Optiver Realized Volatility Prediction: https://www.kaggle.com/competitions/optiver-realizedvolatility-prediction/overview/description 
+
+Phase 1: project proposal (15 marks) 
+In the first phase of the project, you need to submit a proposal. The proposal takes 15 marks in total. 12 marks could be earned by describing clearly and comprehensively the following aspects and the process based on them to achieve the best generalization performance. In this track, you are allowed to use techniques based on your own exploration of the data mining subject beyond the techniques delivered in INFS4203/7203.   
+1. (2 marks) Describe the task of the competition and the basic statistics of the provided dataset. 
+2. (3 marks) Based on your analysis of the dataset, discuss whether the following pre-processing techniques should be considered: outlier detection, normalization, imputation, etc. Describe how to determine appropriate techniques by cross-validation, and how to apply them to the current data. 
+3. (5 marks) Based on the above pre-processed data, describe the procedure of applying the four classification techniques learned in lectures (decision tree, random forest, k-nearest neighbor and naïve bayes) or beyond (SVM, logistic regression, neural networks, boosting etc.) to the data, including necessary model selection and hypermeter tuning by cross-validation. You also need to consider an ensemble of the classification results from different classifiers at the end of learning. 
+4. (1 mark) Describe the process of evaluating the model given the current dataset using cross-validation.  
+5. (1 mark) Give your timeline for the implementation of your project in the second phase. The timeline should include a justified, comprehensive, and feasible list of milestones.   
+The final 3 marks will be given to the presentation of the proposal. We expect the proposal to have good structure, which helps comprehension. The presentation should be neat and professional, with bibliography, which is correctly formatted following the examples in the provided template and appropriately referenced. Marks will be deduced if there are formatting, spelling, grammar, bibliography, referencing or punctuation errors which impact the understanding of the proposal. 
+
+Using of Generative AI 
+Artificial Intelligence (AI), such as ChatGPT, provides emerging tools that may support students in completing this assessment task. Students may appropriately use AI in a revision of existing authentic assessments only. This may involve correcting grammar errors, improving sentence structures, enhancing clarity of expression, or making other relevant revisions. Students must clearly reference any use of AI in each instance to complete the assessment task. A failure to reference AI use or any other way of using AI beyond the revision of existing authentic assessment may constitute student misconduct under the Student Code of Conduct. 
+Specifically, if you use generative AI tools to help revise your proposal, you should 
+1. Acknowledgment Section: Include a dedicated section in your work where you acknowledge the use of AI tools and mention which parts of the content have been revised by AI.  
+2. Documentation (not under the six page limit): Keep track of the AI interactions and any generated outputs during the revision process. This documentation can serve as evidence for the use of AI if needed. 
+Students may be required to demonstrate detailed comprehension of their written submission independent of AI tools through an in-person interview. 
+
+Format 
+The proposal should follow the style of Proposal_Template.doc. The submission should be within six pages, including all references and illustrations (if needed). References should be properly provided once necessary, even if you use contents from lecture slides. Non-peer reviewed web sources could be used and should also be properly cited.  
+
+Submission 
+The proposal should be submitted  
+1. in PDF or Doc (Docx) format, other formats are not acceptable, and 
+2. through the “Proposal submission” Turnitin link provided at Blackboard -> Assessment -> Project -> Proposal submission before the deadline.  
+You are allowed to submit multiple times before the due date. Only the last submitted version will be marked. A 100% penalty will be applied to the late submission (see ECP Section 5 for details). 
+You do not need to submit codes in Phase 1, even if you analyse data by programming.  
+
+Phase 2: Project report (20 marks) 
+In this phase, you will need to implement the ideas in your proposal and use the implemented models to achieve a good position in the competition’s public leading board.
+We do not limit the type of programming languages in Phase 2. You could pick any language you are familiar with.  
+Format and submission details will be released in Week 9.  
+
+Marking standard 
+You need to submit the evidence of your achievements in the public leading board by the end of the project deadline to earn your marks. Your username in the public leading board must be your student username (sxxxxxxx, each x represents a digit).   
+If your targeted competition ends before the project deadline, you could show by cross-validation that you have achieved comparable performance to a particular competitor on the public leading board before the project deadline. Your project could then be assessed by the competitor’s corresponding rank percentage on the public leading board.  
+You have to earn a public Leader Board top ranking index (your rank divided by the total number of competitors) by the project deadline 
+Earned marks = max (20 – max (public_LB_top_ranking_index – 0.4, 0)*30, 0) 
+That is, you earn 20 marks when having Public Leader Board top ranking to be within top 40% of all competitors.  

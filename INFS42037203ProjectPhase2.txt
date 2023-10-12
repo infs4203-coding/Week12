@@ -1,0 +1,72 @@
+INFS4203/7203 Project Phase II (20 marks) 
+Semester 2, 2023 
+Due date: 16:00 on 27th October 2023 (Brisbane Time) (Phase II, 20%) 
+Important Assignment Submission Guidelines: 
+1. All assignments must be submitted exclusively through the UQ Blackboard. No other forms of submission will be accepted. 
+2. Failure to submit an assignment appropriately before the due date will result in a penalty, as outlined in the ECP. 
+3. It is your responsibility to ensure that your assignment is successfully submitted before the designated deadline. 
+4. Please note that email submissions will not be accepted under any circumstances.
+
+Overview 
+In Phase II, you will implement your proposal submitted in Phase I, with necessary adjustment according to the empirical performance and the feedback from the proposal. This is an individual assignment. The completion of the assignment should be based on your own design and feedback from the proposal.  
+
+Track 1: Data-oriented project 
+In Phase II, you will be provided with the test data named test.csv. The first row describes features’ names. Except the first row, each row in the data file corresponds to one data point. There are 300 test data points in this file, and each column represents the same feature as the training data train.csv. Note that the test data only has 128 columns, without labels, i.e., without the final column “Label” in train.csv. Labels for the test data will not be released and will be used by the teaching team for marking only.  
+In this phase, you will need to implement the ideas in your proposal and classify the test data to 10 classes, denoted by number 0 to 9, representing the following categories: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck, respectively. In the marking phase, macro-F1 of the test data will be used for making.  
+You need to submit 
+1. A result report on 
+a) Test result: the prediction in numbers 0-9 on the test data provided (in integer) and
+b) Evaluation result: the evaluated accuracy and macro-F1 on the training data using crossvalidation (in float type).  
+2. A readme file with clear and thorough description of your coding environment (operation system, programming language and its version, additional packages installed etc.) and instructions on how to run the codes such that your reported test and evaluation results can be reproduced. If you need any additional justification or references for your implemented methods, please also include them in the readme file. The readme file can be in any text format, such as .docx, .pdf, or .txt.  
+3. Your implemented codes which include all your training procedures and a main function in a main file (for example, main.py) to pre-processing and train on the training data, prediction on the test data, and generate the submitted result report sxxxxxxx.csv file. Codes for the pre-processing and training procedure are required to be submitted. But the hyperparameter tuning or model selection procedure are NOT required to be submitted.  You are recommended to include the best hyperparameters, models, pre-processing methods etc. directly in your submitted codes.  
+
+Additional requirements 
+1. Please include the provided training and test files into your submitted .zip file for reproducing your results in the marking phase. The generated result report sxxxxxxx.csv file should be in the root directory.  
+2. Any programming language can be used. However, if you use Python, please submit .py files instead of any other formatted files. If you use the Jupyter Notebook or Colab, please submit .py file instead of .ipynb file. 
+3. Please submit your best prediction according to your cross-validation results. Multiple test results submitted will not be marked. 
+
+Format 
+1. The result report should be named as sxxxxxxx.csv (sxxxxxxx is your student username) with the same Submission Title when submitting through the “Report Submission” Turnitin link provided. For example, if your student username is s1234567, then the result report should be named as s1234567.csv and submitted with the same Submission Title.  
+2. The result report should be composed of 301 rows. For the first 300 rows, the ith row gives the prediction of the ith test instance, a number from {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} (in integer type). The last row (row 301) gives the accuracy (first column, rounded to the nearest 3rd decimal place) and macro-F1 (second column, rounded to the nearest 3rd decimal place) evaluated by yourself through cross-validation on the training data, both in float type. You could refer to result_report_example.csv, which provides an example (NOT groundtruth) of the result report.  
+Note that result reports submitted in other forms or names will not be accepted or marked.  
+3. Together with the result report, you need to submit a readme file and all your codes. 
+4. The readme file and your codes should be compressed into one zip file named sxxxxxxx.zip (sxxxxxxx is your student username) with the same Submission Title when submitting through the “Readme and code submission” Turnitin link provided.  
+Note that code and readme file submitted in other forms or names will not be accepted or marked.  
+We recommend you follow the Google Style Guides (https://google.github.io/styleguide/) for the programming style. Following such style is not mandatory for this assignment but using it may benefit your future career as a data scientist!  
+
+Submission 
+Only your submitted version will be marked. All required files need to be submitted before due. Otherwise, penalty will be applied according to ECP, i.e., 
+Assessment submissions received after the due time (or any approved extended deadline) will be subject to a 100% late penalty. A one-hour grace period will be applied to the due time after which time the 100% late penalty will be imposed. This grace period is designed to deal with issues that might arise during submission (e.g. delays with Blackboard or Turnitin) and should not be considered a shift of the due time. 
+1. Result report should be submitted through the “Report submission” Turnitin link provided on Blackboard -> Assessment -> Project Phase II -> Report submission before the deadline, with the Submission Title sxxxxxxx.csv.  
+2.Compressed file of readme and codes should be submitted through the “Readme and code submission” Turnitin link provided on Blackboard -> Assessment -> Project Phase II -> Readme and code submission before the deadline, with the Submission Title sxxxxxxx.zip.  
+
+Marking standard 
+Submissions satisfying the following four conditions will be accepted and marked 
+1. The classifiers used to do classification can be reproduced by the submitted readme file and codes. 
+2. The classifier is generated by using only techniques delivered in INFS4203/7203 lectures. 
+3. The test and evaluation results can be reproduced by the submitted readme file and codes. 
+4. The test and evaluation results are generated by applying the learned classifiers to the data.   
+When the above four conditions are satisfied, the result report will be marked according to the macro-F1 result on the test data in the following way (rounded to the nearest 1st decimal place) 
+1. For macro-F1 less than or equal to 0.11: Mark = max[(macro-F1-0.01) *80, 0] 
+2. For macro-F1 greater than 0.11 but less than 0.61: Mark = (macro-F1-0.11) * 10 + 8 
+3. For macro-F1 greater than or equal to 0.61 but less than 0.81: Mark = (macro-F1-0.61) * 35 + 13 
+4. For macro-F1 greater than or equal to 0.81: Mark = 20 
+Training time or prediction time will not be counted into marking.  
+
+Track 2: Competition-oriented project 
+In this phase, you need to submit: 
+1. A result report of the Public Leader Board results, including a screenshot and an URL of the Public Leader Board.  
+2. A readme file with clear and thorough description of your coding environment (operation system, hardware requirement, programming language and its version, additional packages installed etc.) and instructions on how to run the code such that your final submission to Kaggle can be reproduced 
+3. Your implemented codes including training and test codes which have a main function to generate the final submission to Kaggle.  
+Your submission will be marked according to the marking standard specified in “Project Specification” released in Week 2.  
+
+Format 
+1. The result report should be named as sxxxxxxx.pdf or sxxxxxxx.doc/docx (sxxxxxxx is your student username). For example, if your student username is s1234567, then the result report should be named as s1234567.pdf/doc/docx.  
+Note that result report submitted in other forms or names will not be accepted or marked. 
+2. Together with the report, you need to submit all your code and a readme file. The readme file and your code should be compressed into one zip file named sxxxxxxx.zip (sxxxxxxx is your student username).  
+Note that code and readme file submitted in other forms or names will not be accepted or marked.  
+
+Submission 
+Only your submitted version will be marked. All required files need to be submitted before due. Otherwise, penalty will be applied according to ECP.  
+1. Result report should be submitted through the “Report submission” Turnitin link provided at Blackboard -> Assessment -> Project Phase II -> Report submission before the deadline with the Submission Title sxxxxxxx.pdf or sxxxxxxx.doc/docx. 
+2. Compressed readme file and code should be submitted through the “Readme and code submission” Turnitin link provided at Blackboard -> Assessment -> Project Phase II -> Readme and code submission before the deadline with the Submission Title sxxxxxxx.zip. Note that the zip file should be smaller than 100MB. If your file is larger than 100MB, please contact the course email (infs4203@eecs.uq.edu.au ) before due time by email in case there is any penalty applied to later submission.  

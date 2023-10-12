@@ -1,0 +1,71 @@
+Project INFS4203/7203 - Semester 2, 2023
+
+**Important Assignment Submission Guidelines:**
+1. All assignments must be submitted through UQ Blackboard; no other forms of submission are accepted.
+2. Failure to submit an assignment appropriately before the due date will result in a penalty, as outlined in the ECP.
+3. Ensure your assignment is successfully submitted before the designated deadline.
+4. Email submissions will not be accepted under any circumstances.
+
+**Overview:**
+The objective of this assignment is to assess your ability to apply data mining techniques to solve real-world problems. It is an individual task, and your completion should be based on your own design.
+
+**Project Phases and Submission Deadlines:**
+- Phase 1 (Project Proposal): Due by 16:00 on 15th September 2023 (15% of the total project grade).
+- Phase 2 (Project Report): Due by 16:00 on 27th October 2023 (20% of the total project grade).
+
+**Project Tracks:**
+You can choose between two project tracks:
+1. Data-oriented project
+2. Competition-oriented project
+
+**Data-oriented Project:**
+- Utilizes the "train.csv" dataset, which simulates real-world scenarios with various complexities.
+- Objective: Develop a classifier capable of accurately classifying data points into ten classes.
+- Performance evaluated using test data released in Week 9.
+
+**Phase 1 - Project Proposal (15 Marks):**
+The proposal should cover these aspects:
+1. Discuss the need for pre-processing techniques (outlier detection, normalization, imputation) based on dataset analysis.
+2. Describe the process of applying classification techniques (decision tree, random forest, k-nearest neighbor, naive bayes) and hyperparameter tuning by cross-validation.
+3. Explain how to evaluate the model and select the appropriate performance metric.
+4. Provide a timeline for Phase 2.
+
+**Using Generative AI:**
+Students can use AI tools, like ChatGPT, for revising their proposal. Proper acknowledgment and documentation are essential, and in-person interviews may be required.
+
+**Format:**
+Follow the Proposal_Template.doc style, and the submission should be within four pages, including all references and illustrations.
+
+**Submission:**
+Submit the proposal in PDF or Doc (Docx) format through the "Proposal submission" Turnitin link on Blackboard before the deadline.
+
+**Phase 2 - Project Report (20 Marks):**
+In this phase, you implement the ideas from your proposal and classify test data. Only techniques covered in lectures are allowed. Specific details will be provided in Week 9.
+
+**Competition-oriented Project:**
+Engage in a data mining-related online competition with satisfactory test performance. Detailed information is provided about the competition's eligibility and guidelines.
+
+**Phase 1 - Project Proposal (15 Marks):**
+Proposal requirements:
+1. Describe the competition task and basic dataset statistics.
+2. Discuss pre-processing techniques and their relevance based on dataset analysis.
+3. Describe the procedure for applying classification techniques and hyperparameter tuning, including an ensemble approach.
+4. Explain the model evaluation process.
+5. Provide a timeline for Phase 2.
+
+**Using Generative AI:**
+Usage of generative AI tools for proposal revision is allowed with proper acknowledgment and documentation.
+
+**Format:**
+Follow the Proposal_Template.doc style, and the submission should be within six pages, including all references and illustrations.
+
+**Submission:**
+Submit the proposal in PDF or Doc (Docx) format through the "Proposal submission" Turnitin link on Blackboard before the deadline. Multiple submissions are allowed, with the last version being marked.
+
+**Phase 2 - Project Report (20 Marks):**
+Implement your proposal ideas and achieve a good position in the competition's public leaderboard. You can choose any programming language.
+
+**Marking Standard:**
+Evidence of your achievements in the public leaderboard is required by the project deadline. Earned marks depend on your ranking compared to other competitors.
+
+For full details, refer to the official assignment guidelines provided by your course instructor.
